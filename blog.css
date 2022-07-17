@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wight@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+body{
+    background: #e3e6f3;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    /*efecto header sticky*/
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+#navbar li a:hover, 
+#navbar li a.active{
+    color: #088178;
+}
+
+
+
+#navbar li a:hover::after,
+#navbar li a.active::after{
+    content: "";
+    width: 30%;
+    height:2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#contenedor_principal{
+    width: 1360px;
+    height: 50vh;
+    margin:40px 40px 0 80px;
+    display: flex;
+    flex-direction: row;
+    background: rgba(222, 184, 135, 0.653);
+    position: relative;
+}
+
+#imagen_referencial{
+    width: 48%;
+    height: 100%;
+}
+
+#imagen_referencial img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#pequeño_texto{
+    width: 52%;
+    height: 100%;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pequeño_texto h2{
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#pequeño_texto p{
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+#contenedor_principal a{
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    color: black;
+}
+
+
+#contenedor_principal a:hover{
+    color: #088178;
+}
+
+/*SM-HEADER*/
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    min-width: 650px;
+    height: 50vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/blog/artesanos_destacados/artesano_destacado01.jpg");
+    background-size: cover;
+    background-position:center; 
+} 
+
+#sm-banner .banner-box h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner .banner-box h2{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner .banner-box span{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+
+#sm-banner .banner-box button{
+    font-size: 13px;
+    font-weight: 900;
+    background:transparent;
+    padding: 11px 21px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition:0.2s;
+}
+
+
+#sm-banner .banner-box button:hover{
+    background-color:#088178;    
+}
+
+#sm-banner .banner-box:nth-child(2){
+    background-image: url("img/blog/artesanías_destacadas/artesanía_destacada1.jpg");
+}
